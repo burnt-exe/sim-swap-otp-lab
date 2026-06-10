@@ -1,0 +1,23 @@
+{
+  "name": "SIM Swap OTP Lab",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "sim-swap-otp-lab",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "SIM Swap OTP Lab",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "GitHub.vscode-github-actions"
+      ]
+    }
+  }
+}
